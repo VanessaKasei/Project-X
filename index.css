@@ -2,30 +2,112 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 150vh; 
+     height: 200vh;
 }
-nav {
-  padding: 10px;  
-}
-.nav-container {
-    background: transparent;
+
+.navbar {
     display: flex;
-    z-index: 100;
     justify-content: right;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
 }
 
 .nav-links li {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: rgb(252, 250, 250);
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(45, 100, 100);
+        padding: 10px 0;
+    }
+
+    .nav-links.show li {
+        margin: 10px;   
+     }   
+}
+
+.section1 {
+    height: 50vh;
+    width: 100%;
+    background:linear-gradient(to bottom right, #868f06, #dd1382);
+}
+
+.section1-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.section1-container p {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
     
 }
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    font-size: large;    
+
+.section2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.section2-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: lightgreen;
+}
+
+.image1 img{
+    width: 30%;
+    height: 200px;
+    padding: 10px;
+}
+
+img:hover {
+    transform: scale(1.05);
 }
