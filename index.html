@@ -5,17 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
     </head>
-    <body style="background: linear-gradient(to bottom right, #8f3d06, #dd1382);">
-        <nav>
-            <div class="nav-container">
-                <ul class="nav-links">
+    <body>
+        <nav class="navbar">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-links" id="navLinks">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#blog">Blog Posts</a></li>
                 </ul>
-            </div>
         </nav>
-        <div class="image-container"></div>
+        <section class="section1"  >
+            <div class="section1-container">
+                <p>Art in its essence, isa powerful form of creative expression that</p>
+                <p>trancends boundaries and speaks to the soul. Through art, artists</p>
+                <p>can convey their thoughts, ideas and beliefs, stirring emotions and</p>
+                <p>provoking thought in the audience. It serves as a timeless means of</p>
+                <p>communication, connecting people across cultures and generations, bridging gaps</p>
+                <p>and fostering empathy.</p>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="section2-container">
+                <div class="image1">
+                    <img src="cutting2.jpg">
+                    <button>Read more</button>
+                    <img src="cutting 3.jpg">
+                    <button>Read more</button>
+                    <img src="cutting4.jpg">
+                    <button>Read more</button>
+                </div>
+            </div>
+        </section>
+        
+        <script src="index.js"></script>
     </body>
 </html>
