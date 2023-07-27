@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
      height: 200vh;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .bar {
-    width: 20px;
+    max-width: 20px;
     height: 3px;
     background-color: black;
     margin: 5px 0;
@@ -73,14 +73,14 @@ body {
 
 .section1 {
     height: 50vh;
-    width: 100%;
+    max-width: 100%;
     background:linear-gradient(to bottom right, #868f06, #dd1382);
 }
 
 .section1-container {
     position: relative;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .section1-container p {
@@ -91,23 +91,29 @@ body {
 }
 
 .section2 {
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
 }
 
 .section2-container {
     position: relative;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     background: lightgreen;
+    padding: 20px;
 }
 
 .image1 img{
-    width: 30%;
-    height: 200px;
+    max-width: 30%;
+    height: auto;
     padding: 10px;
 }
 
 img:hover {
     transform: scale(1.05);
+}
+
+button {
+    padding: 1% 1%;
+    border-radius: 30px;
 }
